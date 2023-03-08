@@ -161,6 +161,8 @@ body {
     background-color: var(--secondary-title-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg); 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .hero-title {
     font-size: 56px;
@@ -210,6 +212,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: var(--footer-item-color);
+    border-radius: var(--btn-radius);
 }
 .about-item:nth-child(1)::before {
     background-image: url('../images/antenna.svg');
@@ -452,14 +455,18 @@ body {
     column-gap: var(--card-set-gap);
     row-gap: 48px
 }
+
+.portfolio-card {
+    display: inline-block;
+}   
+.portfolio-card:hover,:focus {
+    box-shadow: var(--portfolio-card);
+}
 .portfolio-card-content-item {
     padding: var(--padding-hero-btn-feature-portfolio-card) 0 var(--padding-hero-btn-feature-portfolio-card) var(--padding-hero-btn-portfolio-card);
     background: var(--main-title-color);
     border: 1px solid var(--footer-item-background);
     border-top: none;
-}
-.portfolio-card-hover:hover,:focus {
-    box-shadow: var(--portfolio-card);
 }
 .portfolio-title {
     font-weight: 500;
